@@ -1,0 +1,399 @@
+body{
+    margin: 0px;
+  }
+  header{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: beige;
+    align-items: center;
+    width: 100%;
+    
+  }
+  
+  header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  header img{
+    height: 70px;
+    margin: 0px;
+    padding-left: 30px;
+  }
+  nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    margin: 20px;
+  
+  }
+  header nav{
+    display: flex;
+  }
+  
+  .div1{
+    overflow: hidden;
+    background-image: url("./img/portada.png"); /* background imagen como primera impresion*/
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea los elementos al final del eje principal */
+    padding: 20px; /* Agregamos un poco de relleno para separar los elementos del borde del div */
+    box-sizing: border-box; /* Esto hace que el relleno no incremente el tamaño total del div */
+  }
+  .tituloprincipal{
+    width: 20%;
+    margin: 5px;
+    font-family: "Kaushan Script", cursive;
+    font-size: 80px;
+    color: white;
+  }
+  .p1{
+    width: 50%;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .learnmore {
+    width: 20%;
+    display: inline-block;
+    padding: 12px 24px; /* Ajusta el espaciado interno según sea necesario */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
+    background-color: transparent; /* Color de fondo transparente */
+    border: 2px solid #fff; /* Borde blanco */
+    border-radius: 4px; /* Añade esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Añade una transición suave */
+  }
+  
+  .learnmore:hover {
+    color: #000000; /* Cambia el color de texto a azul */
+    background-color: #fff; /* Cambia el color de fondo a blanco */
+    border-color: #fff; /* Cambia el color del borde a blanco */
+  }
+  
+  .learnmore:focus {
+    outline: none; /* Quita el contorno al enfocar */
+  }
+  .div2 {
+    display: flex;
+    background-color: rgb(131, 131, 131);
+  }
+  
+  .text {
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+    flex: 1;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    padding-right: 20px; /* Agrega espacio a la derecha para separar la imagen */
+    margin: 40px;
+    padding-left: 60px;
+    font-size: 18px;
+  }
+  .highlight-text{
+    background-color: rgba(0, 255, 204, 0.399);
+  }
+  h3{
+    font-size: 45px;
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  .imagen1 img {
+    max-width: 100%;
+    height: 500px;
+    margin: 20px;
+  }
+  
+  .titulo1  {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+  }
+  .div3{
+    width: 100%;
+    background-color: rgb(209, 207, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .text2{
+    font-size: 20px;
+    margin: 0px;
+  }
+  .cuadritos-conteiner {
+    margin-top: 0px;
+    width: 100%;
+    background-color: rgb(209, 207, 207);
+    display: grid; /* Cambiado a grid */
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    grid-template-rows: auto auto; /* Filas automáticas */
+    gap: 10px; /* Espacio entre las filas y columnas */
+    text-align: center;
+    font-size: 27px;
+  }
+  .cuadrito {
+    align-items: center;
+    justify-items: center;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 50px;
+  }
+  .cuadritos-conteiner ol {
+    font-size: 16px; /* Cambia el tamaño del texto para los elementos <ol> */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto para los elementos <ol> */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .div4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    background-image: url(./img/pablononnis.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .contacto {
+    padding: 12px 24px; /* Ajusta el espaciado interno según sea necesario */
+    display: inline-block;
+    width: fit-content; /* Ancho ajustado al contenido */
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(59, 255, 15);
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: rgb(59, 255, 15);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Añade una transición suave */
+  }
+  .contacto:hover{
+    color: #000000;
+    background-color: white;
+    border-color: white;
+  }
+  .contacto:focus{
+    outline:none
+  }
+  @media screen and (max-width: 450px){
+    header {
+      background-color: beige;
+      height: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden; /* Evita que el contenido se traspase fuera del contenedor */
+    }
+    
+    .logo {
+      width: 100px; /* Ajusta el ancho según sea necesario */
+      justify-content: center;
+      padding-right: 10px;
+    }
+    header img{
+      height: 55px;
+      width: 100%;
+    }
+    
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; /* Ancho ajustado para evitar que los enlaces se extiendan demasiado */
+    }
+    .links{
+      font-size: 16px;
+    }
+    
+    
+    .div1{
+      max-width: 100%;
+      overflow: hidden;
+      background-image: url("./img/Screenshot\ 2024-04-08\ at\ 14.39.44.jpg"); /* background imagen como primera impresion*/
+      background-size: cover;
+      background-position: center;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Alinea los elementos al final del eje principal */ /* Agregamos un poco de relleno para separar los elementos del borde del div */
+      box-sizing: border-box; /* Esto hace que el relleno no incremente el tamaño total del div */
+    }
+    h1{
+      width: 100%;
+      margin: 5px;
+      font-family: "Kaushan Script", cursive;
+      font-size: 60px;
+      color: white;
+      justify-content: center;
+    }
+    .p1{
+      width: 100%;
+      font-size: 14px;
+      color: white;
+      justify-content: center;
+    }
+    
+    .learnmore {
+      width: 100%;
+      display: inline-block;
+      padding: 12px 24px; /* Ajusta el espaciado interno según sea necesario */
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff; /* Color de texto blanco */
+      background-color: transparent; /* Color de fondo transparente */
+      border: 2px solid #fff; /* Borde blanco */
+      border-radius: 4px; /* Añade esquinas redondeadas */
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Añade una transición suave */
+    }
+    
+    .learnmore:hover {
+      color: #000000; /* Cambia el color de texto a azul */
+      background-color: #fff; /* Cambia el color de fondo a blanco */
+      border-color: #fff; /* Cambia el color del borde a blanco */
+    }
+    
+    .learnmore:focus {
+      outline: none; /* Quita el contorno al enfocar */
+    }
+    .div2 {
+      width: 100%;
+      background-color: rgb(131, 131, 131);
+    }
+    
+    .text {
+      width: 100%; /* Establece el ancho al 100% */
+      font-family: 'proxima-nova', sans-serif;
+      font-style: normal;
+      color: white;
+      padding-right: 20px; /* Agrega espacio a la derecha para separar la imagen */
+      font-size: 20px;
+    }
+    
+    .highlight-text {
+      background-color: rgba(0, 255, 204, 0.399);
+    }
+    
+    h3 {
+      width: 100%; /* Establece el ancho al 100% */
+      font-size: 40px;
+      font-family: 'proxima-nova', sans-serif;
+      font-style: normal;
+    }
+    
+    .imagen1 img {
+      width: 10%;
+      height: 0px;
+      margin: 20px;
+    }
+    
+    
+    h2 {
+      font-family: "PT Serif", serif;
+      font-weight: 700;
+      font-style: normal;
+      text-align: center;
+    }
+    .div3{
+      width: 100%;
+      background-color: rgb(209, 207, 207);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .text2{
+      font-size: 18px;
+      margin: 0px;
+      align-items: center;
+    }
+    .cuadritos-conteiner {
+      margin-top: 0px;
+      width: 100%;
+      background-color: rgb(209, 207, 207);
+      display: grid; /* Cambiado a grid */
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: auto auto; /* Filas automáticas */
+      gap: 4px; /* Espacio entre las filas y columnas */
+      text-align: center;
+      font-size: 13px;
+    }
+    .cuadrito {
+      align-items: center;
+      justify-items: center;
+      font-family: "PT Serif", serif;
+      font-weight: 700;
+      font-style: normal;
+      padding-top: 20px;
+    }
+    .cuadritos-conteiner ol {
+      font-size: 0px; /* Cambia el tamaño del texto para los elementos <ol> */
+      font-family: Arial, sans-serif; /* Cambia la fuente del texto para los elementos <ol> */
+      text-align: center;
+      align-items: center;
+      padding-bottom: 12px;
+    }
+    .div4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 750px;
+      background-image: url(./img/IMG_4216.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .contacto {
+      padding: 12px 24px; /* Ajusta el espaciado interno según sea necesario */
+      display: inline-block;
+      width: fit-content; /* Ancho ajustado al contenido */
+      font-family: 'proxima-nova', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: rgb(59, 255, 15);
+      border: 2px solid;
+      border-radius: 4px;
+      border-color: rgb(59, 255, 15);
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Añade una transición suave */
+    }
+    .contacto:hover{
+      color: #000000;
+      background-color: white;
+      border-color: white;
+    }
+    .contacto:focus{
+      outline:none
+    }
+  
+  
+  
+  
+  
+  
+  }
