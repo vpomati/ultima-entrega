@@ -1,237 +1,77 @@
-body{
+body {
     background-color: rgb(156, 154, 154);
 }
-.linkeoC{
-    padding-top: 40px;
+
+.linkeoC {
     font-family: "Kaushan Script", cursive;
-    font-size: 60px;
+    font-size: 5vw; /* Usando vw para un tamaño de fuente responsive */
     color: white;
     text-decoration: none;
+    text-align: center; /* Centrar el texto */
 }
-.campeones{
+
+.campeones {
     text-decoration: none;
     color: white;
+    height: auto;
 }
-.titulo2{
-    font-size: 120px;
-    width: 55%;
-    margin: 30px;
+
+.titulo2 {
+    font-size: 8vw; /* Usando vw para un tamaño de fuente responsive */
+    width: 70%; /* Usando % para el ancho responsive */
+    margin: 10px;
     font-family: "Kanit", sans-serif;
-    height: 600px;
-}
-.grid-conteiner {
-    gap: 20px;
-    padding: 40px;
-    font-family: 'proxima-nova', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    background-color: rgb(61, 60, 60);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px auto; /* Dos filas automáticas */
-    align-items: center;
-}
-h5{
-    font-size: 100px;
-}
-.grid-item {
-    grid-column: 1 / span 2; /* Ocupará dos columnas completas */
-    grid-row: 1; /* Ocupará la primera fila */
-    color: white;
-    font-size: 70px;
-    font-family: 'proxima-nova', sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    max-height: auto; /* Establecer una altura máxima para evitar que sea demasiado alto en pantallas pequeñas */
+    overflow: hidden; /* Ocultar cualquier contenido que exceda la altura máxima */
 }
 
-.grid-item1 {
-    grid-column: 1; /* Ocupará la primera columna */
-    grid-row: 2; /* Ocupará la segunda fila */
-    color: white;
-    font-size: 25px;
-}
 
-.grid-item2 {
-    grid-column: 2; /* Ocupará la segunda columna */
-    grid-row: 2; /* Ocupará la segunda fila */
-    color: white;
-    font-size: 25px;
-}
-.highlight{
-    background-color: rgba(0, 0, 255, 0.572);
-}
-.grid-conteiner2{
-    display: grid;
-    background-color: white;
-    font-family: 'proxima-nova', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr auto;
-    align-content: center;
+@media screen and (max-width: 450px) {
+    .linkeoC {
+        font-size: 24px; /* Tamaño de fuente ajustado para pantallas pequeñas */
+    }
 
-}
-.grid-item3{
-    grid-column: 2;
-    grid-row: 1;
-    font-family: "Kaushan Script", cursive;
-}
-h6{
-    font-size: 30px;
-    border-bottom: solid;
-    border-color: rgb(17, 17, 215);
-    width: 20%; 
-    
-}
-h3{
-    font-size: 50px;
-    font-family: 'proxima-nova', sans-serif;
-    width: 58%;
-}
-.grid-item4{
-    gap: 20px;
-    grid-area: 1/1/span 2/span 1;
-    padding-left: 200px;
-}
-.img-grid-conteiner2{
-    height: 600px;
-    margin: 20px;
-    border: solid;
-    border-color: rgb(16, 230, 16);
-    border-radius: 4px;
-}
-.grid-item5{
-    font-size: 20px;
-    padding-bottom: 100px;
-    width: 60%;
-}
-@media screen and (max-width: 450px){
-    header {
-      background-color: beige;
-      height: 100px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden; /* Evita que el contenido se traspase fuera del contenedor */
+    .titulo2 {
+        font-size: 40px; /* Tamaño de fuente ajustado para pantallas pequeñas */
+        width: 90%; /* Ancho ajustado para pantallas pequeñas */
+        margin: 20px 0;
     }
-    
-    .logo {
-      width: 100px; /* Ajusta el ancho según sea necesario */
-      justify-content: center;
-      padding-right: 10px;
-    }
-    header img{
-      height: 55px;
-      width: 100%;
-    }
-    
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      width: 100%; /* Ancho ajustado para evitar que los enlaces se extiendan demasiado */
-    }
-    .links{
-      font-size: 16px;
-    }
-    h1{
-        padding-top: 10px;
-        font-family: "Kaushan Script", cursive;
-        font-size: 30px;
-        color: white;
-        text-decoration: none;
-    }
-    .campeones{
-        text-decoration: none;
-        color: white;
-    }
-    h2{
-        font-size: 60px;
-        width: 60%;
-        margin: 30px;
-        font-family: "Kanit", sans-serif;
-    }
+
     .grid-conteiner {
-        gap: 20px;
-        padding: 40px;
-        font-family: 'proxima-nova', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        background-color: rgb(61, 60, 60);
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px auto auto; /* Dos filas automáticas */
-        align-items: center;
+        padding: 20px;
+        gap: 10px;
     }
-    h5{
+
+    h5 {
         font-size: 50px;
     }
+
     .grid-item {
-        grid-column: 1 / span 2; /* Ocupará dos columnas completas */
-        grid-row: 1; /* Ocupará la primera fila */
-        color: white;
-        font-size: 70px;
-        font-family: 'proxima-nova', sans-serif;
-        font-style: normal;
-        font-weight: 600;
+        font-size: 40px;
     }
-    
-    .grid-item1 {
-        grid-column: 1; /* Ocupará la primera columna */
-        grid-row: 2; /* Ocupará la segunda fila */
-        color: white;
-        font-size: 25px;
-    }
-    
+
+    .grid-item1,
     .grid-item2 {
-        grid-column: 1; /* Ocupará la segunda columna */
-        grid-row: 3; /* Ocupará la segunda fila */
-        color: white;
-        font-size: 25px;
+        font-size: 18px;
     }
-    .highlight{
+
+    .highlight {
         background-color: rgba(0, 0, 255, 0.572);
     }
-    .grid-conteiner2{
-        display: grid;
-        background-color: white;
-        font-family: 'proxima-nova', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        grid-template-columns: auto;
-        grid-template-rows:auto auto auto;
-        align-content: center;
-    
-    }
-    .grid-item3{
-        grid-column: 1;
-        grid-row: 1;
-        font-family: "Kaushan Script", cursive;
-    }
-    h6{
-        font-size: 30px;
-        border-bottom: solid;
-        border-color: rgb(17, 17, 215);
-        width: 100%; 
-        
-    }
-    h3{
-        font-size: 50px;
-        font-family: 'proxima-nova', sans-serif;
-        width: 100%;
-    }
-    .grid-item4{
-        grid-column: 1;
-    }
-    .img-grid-conteiner2{
-        height: 0px;
-        margin: 0px;
-    }
-    .grid-item5{
-        grid-column: 1;
-        font-size: 18px;
-        padding-bottom: 100px;
-        width: 100%;
-        margin: 10px;
-    }    
 
+    .grid-item3 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .grid-item5 {
+        font-size: 16px;
+    }
 }

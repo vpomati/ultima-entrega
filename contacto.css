@@ -1,5 +1,6 @@
 
 .grid-conteiner3{
+    padding-top: 250px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 400px auto;
@@ -20,8 +21,9 @@
     width: 60%;
 }
 .grid-item7{
+    overflow: hidden;
     grid-column: 1;
-    font-size: 22   px;
+    font-size: 18px;
     width: 50%;
     margin: 30px;
 }
